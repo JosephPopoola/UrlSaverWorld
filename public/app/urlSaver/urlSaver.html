@@ -1,0 +1,17 @@
+<div id="UrlSaverTitle">
+    <h1 class="center">WELCOME TO URL SAVER WORLD</h1>
+</div>
+<div id="us-formMain" class="us-form">
+    <input class="form-control input col-sm-9" ng-model="urlSaver.currentUrl.url" type="text"></input>
+    <button class="btn btn-success col-sm-1" ng-click="urlSaver.save(urlSaver.currentUrl)" >save</button>
+</div>
+
+<div ng-if="urlSaver.listoUrls.length > 0">
+    <h4>Saved  URLs<h4>
+    <div class="us-form" ng-repeat="url in urlSaver.listoUrls">
+        <input id="urlNo-{{$index}}" class="form-control input col-sm-8" ng-model="url.url" type="text"></input>
+        <button class="btn btn-success col-sm-2" ng-click="urlSaver.save(url)"s>update</button>
+        <button class="btn btn-warning col-sm-1" ng-click="urlSaver.copy($event)"  >copy</button>
+        <button class="btn btn-danger col-sm-1" ng-click="urlSaver.delete(url)">delete</button>
+    </div>
+</div>

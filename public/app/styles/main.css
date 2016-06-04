@@ -1,0 +1,176 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+/* MY RULES*/
+button{
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+input{
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: #ddd !important;
+}
+
+textarea{
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: #ddd !important;
+}
+
+select{
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: #ddd !important;
+}
+
+a{
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+
+.form-group{
+    margin-bottom: 30px;
+}
+/* Header / NavBar*/
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fadeIn{
+  animation-duration: 4s;
+}
+
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-brand:visited{
+    color: white;
+}
+
+.navMain{
+    background-color: #333;
+    border-radius: 0;
+}
+
+.navItems ul {
+    display: flex;
+    margin: 0;
+    position: unset;
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navItems ul li a{
+    padding: 15px 15px;
+    color: white;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* About*/
+.about-p{
+    display: flex;
+    justify-content: center;
+}
+
+/* URL saver page*/
+
+#UrlSaverTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.us-form{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#us-formMain{
+    display: flex;
+     margin-bottom: 50px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.viewHeight{
+    min-height: 90vh;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

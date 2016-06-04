@@ -1,0 +1,14 @@
+<div class="header" ng-controller="navBarCtrl">
+    <div class="navbar navMain" role="navigation">
+    <div class="container navItems">
+
+        <a class="navbar-brand hvr-buzz-out" href="#/">URL Saver World!</a>     
+        <ul>
+            <li ng-repeat="item in NavItems">
+                <a class="hvr-shutter-in-horizontal" ng-href="#/{{item.route}}">{{item.name}}</a>
+            </li>           
+        </ul>
+        </div>
+    </div>
+    </div>
+</div>

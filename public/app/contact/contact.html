@@ -1,0 +1,38 @@
+<form class="form-horizontal app-form">
+<fieldset>
+
+<legend><h1>Contact</h1></legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name</label>  
+  <div class="col-md-8">
+  <input id="textinput" name="textinput" type="text" ng-model="contact.contact.name" placeholder="e.g. Bruce Wayne" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Email</label>  
+  <div class="col-md-8">
+  <input id="textinput" name="textinput" type="text" ng-model="contact.contact.email"  placeholder="e.g. IAm@NotBatman.com" class="form-control input-md">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Query Type</label>
+  <div class="col-md-8">
+    <select id="selectbasic" ng-model="contact.contact.queryType" name="selectbasic" class="form-control">
+      <option ng-repeat="option in contact.queryTypeOptions" value="{{option.value}}">{{option.name}}</option>
+    </select>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Message Content</label>
+  <div class="col-md-8">                     
+    <textarea class="form-control" ng-model="contact.contact.message" id="textarea" name="textarea" rows="7"></textarea>
+  </div>
+</div>
+
+</fieldset>
+<button class="btn col-sm-offset-11" type="submit" ng-click="contact.submit(contact.contact)">Submit</button>
+</form>
