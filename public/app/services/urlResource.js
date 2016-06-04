@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('randomApp').factory('urlResource',['FBMSG','$firebaseArray',function(FBMSG,$firebaseArray){
+angular.module('randomApp').factory('urlResource',['FBMSG','$firebase','$firebaseArray',function(FBMSG, $firebase,$firebaseArray){
 
   var ref = new Firebase(FBMSG);
   var urls = $firebaseArray(ref);
